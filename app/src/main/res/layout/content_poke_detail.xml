@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mdb.android.mdb_week_2_solution.PokeDetailActivity"
+    tools:showIn="@layout/activity_poke_detail">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/placeholder"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pokeProfile"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/pokeNum"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:text="PokeDex #:"
+        android:layout_below="@+id/pokeProfile"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/pokeData"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Species:"
+        android:layout_below="@+id/pokeNum"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokeData">
+
+        <TextView
+            android:text="Defense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/defenseTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Attack"
+            android:layout_marginEnd="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/attackTitle"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/defenseTitle" />
+
+        <TextView
+            android:text="HP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/hpTitle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/defenseTitle"
+            android:layout_marginStart="48dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/PokeBlack"
+            android:layout_below="@+id/attackTitle"/>
+        <TextView
+            android:text="Defense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/defense"
+            android:layout_below="@+id/attackTitle"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="HP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/hp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/defense"
+            android:layout_marginStart="48dp" />
+
+        <TextView
+            android:text="Attack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/attack"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/defense"
+            android:layout_marginEnd="48dp"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

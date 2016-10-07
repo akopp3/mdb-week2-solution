@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f00000</color>
+    <color name="colorPrimaryDark">#ee1515</color>
+    <color name="colorAccent">#D32F2F</color>
+
+    <color name="PokeRed">#f00000</color>
+    <color name="PokeBlack">#222224</color>
+    <color name="PokeWhite">#f0f0f0</color>
+    <color name="transparent"> #00ffffff</color>
+</resources>
